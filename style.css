@@ -7,7 +7,42 @@ body {
     background-color: antiquewhite;
 }
 
+img {
+    width: 100%;
+}
+
 figure {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+/***************************************SPLASH*****************************************************/
+
+/*************************************OM SEKTION***************************************************/
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om .txt {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#om .picture {
+    flex-grow: 1;
+    flex-basis: 500px;
 }
