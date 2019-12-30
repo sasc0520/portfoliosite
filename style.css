@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    background-color: antiquewhite;
 }
 
 img {
@@ -28,7 +27,19 @@ p {
     font-size: 1em;
 }
 
+.colorproject {
+    background-color: beige;
+}
+
 /***************************************SPLASH*****************************************************/
+#forside {
+    /*    width: 100vw;*/
+    height: 100vh;
+    background-image: url(images/splashbillede.jpg);
+    background-size: cover;
+    background-position: 16% 5%;
+    max-width: none;
+}
 
 /*************************************OM SEKTION***************************************************/
 
@@ -40,9 +51,28 @@ p {
 #om .txt {
     flex-grow: 1;
     flex-basis: 500px;
+    margin: 2em;
 }
 
 #om .picture {
     flex-grow: 1;
     flex-basis: 500px;
+}
+
+/***********************************PROJEKTER SEKTION*********************************************/
+
+#projekter .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projekter .project_right {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#projekter .txt {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin: 2em;
 }
