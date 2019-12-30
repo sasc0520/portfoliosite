@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,14 +20,17 @@ figure {
 
 h1 {
     font-size: 3em;
+    font-family: 'Playfair Display', serif;
 }
 
 h2 {
     font-size: 2em;
+    font-family: 'Playfair Display', serif;
 }
 
 p {
     font-size: 1em;
+    font-family: 'Chivo', sans-serif;
 }
 
 .colorproject {
@@ -37,9 +41,41 @@ p {
     background-color: blue;
 }
 
-section {
-    /*    margin-top: -2.5em;
-    */
+/*********************************************MENU************************************************/
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+header nav a {
+    font-size: 1em;
+    font-family: 'Chivo', sans-serif;
+    text-decoration: none;
+    color: white;
+
+    padding: 0.5em;
+}
+
+header nav a:link {
+    color: white;
+}
+
+header nav a:visited {
+    color: white;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+header nav a:last-child {
+    border-right: none;
 }
 
 /***************************************SPLASH*****************************************************/
@@ -60,9 +96,11 @@ section {
 }
 
 #om .txt {
-    flex-grow: 1;
-    flex-basis: 500px;
-    margin: 2em;
+    flex-grow: 2;
+    flex-basis: 600px;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 4em;
 }
 
 #om .picture {
@@ -91,4 +129,9 @@ section {
     flex-grow: 1;
     flex-basis: 500px;
     margin: 2em;
+}
+
+#projekter .project_left {
+    flex-grow: 1;
+    flex-basis: 500px;
 }
