@@ -8,6 +8,8 @@ body {
 
 img {
     width: 100%;
+
+    display: block;
 }
 
 figure {
@@ -29,6 +31,15 @@ p {
 
 .colorproject {
     background-color: beige;
+}
+
+.colora {
+    background-color: blue;
+}
+
+section {
+    /*    margin-top: -2.5em;
+    */
 }
 
 /***************************************SPLASH*****************************************************/
@@ -64,6 +75,11 @@ p {
 #projekter .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+}
+
+#projekter .heading {
+    flex-grow: 2;
+    flex-basis: 1200px;
 }
 
 #projekter .project_right {
