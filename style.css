@@ -19,17 +19,17 @@ figure {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-family: 'Playfair Display', serif;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'Chivo', sans-serif;
 }
 
@@ -54,12 +54,12 @@ header nav {
 }
 
 header nav a {
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'Chivo', sans-serif;
     text-decoration: none;
     color: white;
 
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 header nav a:link {
@@ -98,9 +98,9 @@ header nav a:last-child {
 #om .txt {
     flex-grow: 2;
     flex-basis: 600px;
-    margin-left: 5em;
-    margin-right: 5em;
-    padding: 4em;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 4rem;
 }
 
 #om .picture {
@@ -123,15 +123,26 @@ header nav a:last-child {
 #projekter .project_right {
     flex-grow: 1;
     flex-basis: 500px;
+
+    margin-bottom: 8rem;
+}
+
+#projekter .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 #projekter .txt {
     flex-grow: 1;
     flex-basis: 500px;
-    margin: 2em;
+    margin: 2rem;
 }
 
 #projekter .project_left {
     flex-grow: 1;
     flex-basis: 500px;
+
+    margin-bottom: 8rem;
+
 }
