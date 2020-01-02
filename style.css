@@ -31,6 +31,11 @@ h2 {
 p {
     font-size: 1rem;
     font-family: 'Chivo', sans-serif;
+    line-height: 1.5rem;
+}
+
+.heading {
+    margin-left: 1rem;
 }
 
 .colorproject {
@@ -38,7 +43,7 @@ p {
 }
 
 .colora {
-    background-color: white;
+    background-color: antiquewhite;
 }
 
 /*********************************************MENU************************************************/
@@ -124,7 +129,7 @@ header nav a:last-child {
     flex-grow: 1;
     flex-basis: 500px;
 
-    margin-bottom: 8rem;
+    margin-bottom: 11rem;
 }
 
 #projekter .bottom {
@@ -143,6 +148,6 @@ header nav a:last-child {
     flex-grow: 1;
     flex-basis: 500px;
 
-    margin-bottom: 8rem;
+    margin-bottom: 11rem;
 
 }
