@@ -89,6 +89,17 @@ header nav a:hover {
     color: var(--text);
 }
 
+label {
+    margin: 1rem 1.5rem 0 0;
+    font-size: 26px;
+    color: black;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
 .nav_scrolled {
     --text: #333;
     background-color: white;
@@ -161,5 +172,33 @@ header nav a:hover {
     flex-basis: 500px;
 
     margin-bottom: 11rem;
+
+}
+
+/************************************MEDIA QUERIES************************************/
+@media only screen and (max-width: 950px) {
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+
+        display: none;
+    }
+
+    header {
+        display: block;
+        margin: 0;
+
+        text-align: end;
+    }
+
+    #toggle:checked + nav a {
+        display: block;
+    }
 
 }
