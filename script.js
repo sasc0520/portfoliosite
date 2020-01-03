@@ -1,8 +1,6 @@
 const header = document.querySelector("header");
 const sectionOne = document.querySelector("#forside");
-
 const faders = document.querySelectorAll(".fade_in");
-const sliders = document.querySelectorAll(".slide_in");
 
 //sectionOneOptions funktion er her at fortælle hvilke specifikt punkt intersectionobserveren skal lytte efter
 
@@ -27,7 +25,7 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneObserver.observe(sectionOne);
 
 const appearOptions = {
-    threshold: 0,
+    threshold: 0.25,
     rootMargin: "0px 0px -250px 0px"
 };
 
@@ -48,8 +46,4 @@ const appearOnScroll = new IntersectionObserver(function (
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
-});
-
-sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
 });

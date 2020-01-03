@@ -52,37 +52,10 @@ p {
 /*************************************ANIMATIONS**************************************************/
 .fade_in {
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transition: opacity 350ms ease-in;
 }
 
 .fade_in.appear {
-    opacity: 1;
-}
-
-
-.from_left {
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.from_right {
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-}
-
-.from_left,
-.from_right {
-    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-    transition: opacity 250ms ease-in, transform 400ms ease-in;
-    transition: opacity 250ms ease-in, transform 400ms ease-in,
-        -webkit-transform 400ms ease-in;
-    opacity: 0;
-}
-
-.from_left.appear,
-.from_right.appear {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
     opacity: 1;
 }
 
