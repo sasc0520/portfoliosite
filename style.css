@@ -46,15 +46,52 @@ p {
 }
 
 .colora {
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 /*************************************ANIMATIONS**************************************************/
+.fade_in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade_in.appear {
+    opacity: 1;
+}
+
+
+.from_left {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.from_right {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.from_left,
+.from_right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+        -webkit-transform 400ms ease-in;
+    opacity: 0;
+}
+
+.from_left.appear,
+.from_right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
 
 /*********************************************MENU************************************************/
 header {
     position: fixed;
     width: 100%;
+
+    --text: #f4f4f4;
 }
 
 header nav {
@@ -67,25 +104,22 @@ header nav a {
     font-size: 1rem;
     font-family: 'Chivo', sans-serif;
     text-decoration: none;
-    color: white;
-
+    color: var(--text);
     padding: 0.5rem;
 }
 
-header nav a:link {
-    color: white;
-}
-
 header nav a:visited {
-    color: white;
+    color: var(--text);
 }
 
 header nav a:hover {
-    color: white;
+    color: var(--text);
 }
 
-header nav a:last-child {
-    border-right: none;
+.nav_scrolled {
+    --text: #333;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
 /***************************************SPLASH*****************************************************/
