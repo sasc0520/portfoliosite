@@ -1,5 +1,6 @@
 const header = document.querySelector("header");
 const sectionOne = document.querySelector("#forside");
+
 const faders = document.querySelectorAll(".fade_in");
 
 //sectionOneOptions funktion er her at fortælle hvilke specifikt punkt intersectionobserveren skal lytte efter
