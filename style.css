@@ -137,18 +137,9 @@ label {
     margin: 5rem;
 }
 
-#om .txt {}
-
 #om .picture {
     flex-grow: 1;
     flex-basis: 500px;
-}
-
-#om .picture img {
-    height: 650px;
-    width: 500px;
-
-    margin: 0;
 }
 
 /***********************************PROJEKTER SEKTION*********************************************/

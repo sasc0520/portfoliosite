@@ -5,7 +5,7 @@ const faders = document.querySelectorAll(".fade_in");
 //sectionOneOptions funktion er her at fortælle hvilke specifikt punkt intersectionobserveren skal lytte efter
 
 const sectionOneOptions = {
-    rootMargin: "-200px 0px 0px 0px"
+    rootMargin: "-300px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function (
