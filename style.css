@@ -126,13 +126,18 @@ label {
     flex-wrap: wrap;
 }
 
-#om .txt {
+#om .box {
+    background-color: white;
     flex-grow: 2;
     flex-basis: 600px;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding: 4rem;
+    padding: 0 2rem 2rem;
+    2rem;
+    height: 100%;
+
+    margin: 5rem;
 }
+
+#om .txt {}
 
 #om .picture {
     flex-grow: 1;
