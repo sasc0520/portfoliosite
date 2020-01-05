@@ -54,6 +54,10 @@ p {
     background-size: cover;
 }
 
+.color {
+    background-color: bisque;
+}
+
 .colora {
     background-color: white;
 }
@@ -147,6 +151,22 @@ label {
     max-width: none;
 }
 
+#breakpoint .box {
+    background-color: bisque;
+    height: 200px;
+}
+
+#breakpoint .txt {
+    font-size: 2rem;
+    font-family: 'Chivo', sans-serif;
+    line-height: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 113%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*************************************OM SEKTION***************************************************/
 
 #om .sectionwrapper {
@@ -158,9 +178,9 @@ label {
     background-color: white;
     flex-grow: 2;
     flex-basis: 600px;
-    padding: 0 2rem 2rem;
-    2rem;
+    padding: 0 2rem 2rem 2rem;
     height: 100%;
+    border-radius: 20px;
 
     margin: 5rem;
 }
@@ -168,6 +188,10 @@ label {
 #om .picture {
     flex-grow: 1;
     flex-basis: 500px;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 4rem;
 }
 
 /***********************************PROJEKTER SEKTION*********************************************/
@@ -175,6 +199,8 @@ label {
 #projekter .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: 11rem;
 }
 
 #projekter .heading {
@@ -185,28 +211,27 @@ label {
 #projekter .project_right {
     flex-grow: 1;
     flex-basis: 500px;
-
-    margin-bottom: 11rem;
 }
 
 #projekter .bottom {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+
+    margin-bottom: 11rem;
 }
 
 #projekter .txt {
     flex-grow: 1;
     flex-basis: 500px;
-    margin: 2rem;
+    margin: 3rem;
 }
 
 #projekter .project_left {
     flex-grow: 1;
     flex-basis: 500px;
 
-    margin-bottom: 11rem;
-
+    margin-right: 3.5rem;
 }
 
 .button {
@@ -259,3 +284,5 @@ label {
     }
 
 }
+
+@media only screen and (max-width: 950px) {}
