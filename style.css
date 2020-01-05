@@ -34,6 +34,7 @@ h1 {
 h2 {
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
+    margin-top: 0;
 }
 
 p {
@@ -188,10 +189,27 @@ label {
 #om .picture {
     flex-grow: 1;
     flex-basis: 500px;
+}
 
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-right: 4rem;
+#hvordan_arbejder_jeg .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hvordan_arbejder_jeg .box {
+    background-color: white;
+    flex-grow: 2;
+    flex-basis: 600px;
+    padding: 0 2rem 2rem 2rem;
+    height: 100%;
+    border-radius: 20px;
+
+    margin: 5rem;
+}
+
+#hvordan_arbejder_jeg .picture {
+    flex-grow: 1;
+    flex-basis: 500px;
 }
 
 /***********************************PROJEKTER SEKTION*********************************************/
@@ -224,7 +242,9 @@ label {
 #projekter .txt {
     flex-grow: 1;
     flex-basis: 500px;
-    margin: 3rem;
+    padding: 2.5rem;
+
+    margin-bottom: 11rem;
 }
 
 #projekter .project_left {
@@ -232,6 +252,14 @@ label {
     flex-basis: 500px;
 
     margin-right: 3.5rem;
+}
+
+#projekter .bottom_under {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: 11rem;
+    margin-bottom: 11rem;
 }
 
 .button {
@@ -258,6 +286,15 @@ label {
 }
 
 /************************************MEDIA QUERIES************************************/
+
+
+@media only screen and (max-width: 785px) {
+    #projekter .txt {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+}
+
 @media only screen and (max-width: 950px) {
 
     label {
@@ -285,4 +322,42 @@ label {
 
 }
 
-@media only screen and (max-width: 950px) {}
+@media only screen and (max-width: 1169px) {
+
+    #projekter .project_left {
+        flex-basis: 400px;
+    }
+
+    #projekter .txt {
+        flex-basis: 200px;
+    }
+
+    #projekter .project_right {
+        flex-basis: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 1169px) {
+
+    #projekter .sectionwrapper {
+        margin-bottom: 5rem;
+    }
+
+    #projekter .bottom_under {
+        margin-bottom: 5rem;
+    }
+
+    #projekter .bottom {
+        margin-bottom: 5rem;
+    }
+
+    #projekter .txt {
+        margin-bottom: 5rem;
+    }
+
+    #projekter .project_left {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+}
