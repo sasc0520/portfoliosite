@@ -29,19 +29,21 @@ h1 {
 #projekter h1 {
     margin-top: 7rem;
     margin-bottom: 4rem;
+    color: #df570a;
 }
 
 h2 {
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
     margin-top: 0;
+    color: #df570a;
 }
 
 p {
     font-size: 1rem;
     font-family: 'Chivo', sans-serif;
     line-height: 1.5rem;
-    color: #df570a;
+    color: #2a2928;
 }
 
 #om .txt p,
@@ -50,7 +52,7 @@ p {
 }
 
 .heading {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 /********************************************COLORS***********************************************/
@@ -231,9 +233,6 @@ label {
 #projekter .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-
-    margin-bottom: 11rem;
-    align-items: center;
 }
 
 #projekter .heading {
@@ -244,14 +243,14 @@ label {
 #projekter .project_right {
     flex-grow: 1;
     flex-basis: 500px;
+
+    margin-bottom: 11rem;
 }
 
 #projekter .bottom {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-
-    margin-bottom: 11rem;
 }
 
 #projekter .txt {
@@ -265,47 +264,67 @@ label {
 #projekter .project_left {
     flex-grow: 1;
     flex-basis: 500px;
-
-    margin-right: 3.5rem;
-}
-
-#projekter .bottom_under {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    margin-top: 11rem;
     margin-bottom: 11rem;
+    margin-right: 3.5rem;
 }
 
 #projekter .bottom_last {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    margin-bottom: 11rem;
 }
 
 #projekter .bottom_with_color {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 11rem;
+    flex-direction: row-reverse;
+}
+
+.border {
+    border: 2px solid white;
+}
+
+#projekter .sectionwrapper_with_color {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #projekter .bottom_with_color .txt,
 .bottom_with_color .project_right {
-    padding-bottom: 11rem;
+    padding-bottom: 3rem;
 }
+
+#projekter .sectionwrapper_with_color .txt,
+.sectionwrapper_with_color .project_left {
+    padding-bottom: 3rem;
+}
+
+/**********************************************GALLERY*********************************************/
+#gallery .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 11rem;
+}
+
+#gallery .item {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+/*******************************************BUTTON**************************************************/
 
 .button {
     background-color: transparent;
-    border: none;
     color: #6b710f;
     padding: 15px 32px;
     font-family: 'Chivo', sans-serif;
     text-align: center;
     text-decoration: none;
+    text-transform: lowercase;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 9px 4px 0px;
 
     margin-top: 2rem;
 
@@ -316,6 +335,31 @@ label {
 .button:hover {
     background-color: #6b710f;
     color: white;
+}
+
+/***************************************FOOTER****************************************/
+
+footer {
+    display: flex;
+    background-color: orange;
+    height: 100%;
+}
+
+footer p {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin: 4rem;
+}
+
+footer .txt {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+footer .orange {
+    flex-grow: 1;
+    flex-basis: 500px;
 }
 
 /************************************MEDIA QUERIES************************************/
@@ -388,27 +432,36 @@ label {
 
 }
 
+@media only screen and (max-width: 1168px) {
+
+    #gallery .item {
+        flex-basis: 250px;
+    }
+
+    #gallery .sectionwrapper {
+        margin: 10rem;
+    }
+
+}
+
 @media only screen and (max-width: 1169px) {
-
-    #projekter .sectionwrapper {
-        margin-bottom: 5rem;
-    }
-
-    #projekter .bottom_under {
-        margin-bottom: 5rem;
-    }
-
-    #projekter .bottom {
-        margin-bottom: 5rem;
-    }
 
     #projekter .txt {
         margin-bottom: 1rem;
     }
 
+    #projekter .bottom_with_color .txt,
+    .bottom_with_color .project_right {
+        padding-bottom: 2rem;
+    }
+
     #projekter .project_left {
         margin-right: 2rem;
         margin-left: 2rem;
+    }
+
+    #projekter .project_right {
+        margin-bottom: 5rem;
     }
 }
 
