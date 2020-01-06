@@ -205,29 +205,6 @@ label {
     flex-basis: 500px;
 }
 
-#hvordan_arbejder_jeg .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-    align-items: center;
-}
-
-#hvordan_arbejder_jeg .box {
-    background-color: white;
-    flex-grow: 2;
-    flex-basis: 600px;
-    padding: 0 2rem 2rem 2rem;
-    height: 100%;
-    border-radius: 20px;
-
-    margin: 5rem;
-}
-
-#hvordan_arbejder_jeg .picture {
-    flex-grow: 1;
-    flex-basis: 500px;
-}
-
 /***********************************PROJEKTER SEKTION*********************************************/
 
 #projekter .sectionwrapper {
@@ -304,13 +281,15 @@ label {
     display: flex;
     flex-wrap: wrap;
 
-    margin: 11rem;
+    margin: 0rem 11rem 11rem 11rem;
 }
 
 #gallery .item {
     flex-grow: 1;
     flex-basis: 300px;
 }
+
+
 
 /*******************************************BUTTON**************************************************/
 
@@ -379,16 +358,6 @@ footer .orange {
     }
 }
 
-@media only screen and (max-width: 931px) {
-    #om .box {
-        margin: 2rem;
-    }
-
-    #hvordan_arbejder_jeg .box {
-        margin: 2rem;
-    }
-}
-
 @media only screen and (max-width: 950px) {
 
     label {
@@ -416,6 +385,12 @@ footer .orange {
 
 }
 
+@media only screen and (max-width: 1008px) {
+    #om .box {
+        margin: 2rem;
+    }
+}
+
 @media only screen and (max-width: 1169px) {
 
     #projekter .project_left {
@@ -439,7 +414,7 @@ footer .orange {
     }
 
     #gallery .sectionwrapper {
-        margin: 10rem;
+        margin: 0rem 5rem 5rem 5rem;
     }
 
 }
@@ -465,13 +440,21 @@ footer .orange {
     }
 }
 
+@media only screen and (max-width: 1172px) {
+
+    #om .box {
+        padding: 0 2rem 1.5rem 2rem;
+    }
+
+}
+
 @media only screen and (max-width: 1276px) {
 
     #om .figure {
-        flex-basis: 200px;
+        flex-basis: 250px;
     }
 
     #om .box {
-        flex-basis: 200px;
+        flex-basis: 250px;
     }
 }
