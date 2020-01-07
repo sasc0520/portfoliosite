@@ -23,7 +23,7 @@ h1 {
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
     margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
 }
 
 #projekter h1 {
@@ -36,7 +36,7 @@ h2 {
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
     margin-top: 0;
-    color: #df570a;
+    color: #ee8518;
 }
 
 p {
@@ -140,7 +140,7 @@ label {
 
 #forside .splash_txt {
     font-size: 4rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.5rem;
     color: white;
 
@@ -163,13 +163,13 @@ label {
 }
 
 #breakpoint .box {
-    background-color: bisque;
+    background-color: #ee8518;
     height: 200px;
 }
 
 #breakpoint .txt {
     font-size: 2rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.5rem;
     color: white;
     align-items: center;
@@ -188,6 +188,10 @@ label {
     flex-direction: row-reverse;
 
     align-items: center;
+}
+
+#om h1 {
+    color: #df570a;
 }
 
 #om .box {
@@ -216,21 +220,25 @@ label {
 #web .heading {
     flex-grow: 2;
     flex-basis: 1200px;
+    color: #df570a;
 }
 
 #ux .heading {
     flex-grow: 2;
     flex-basis: 1200px;
+    color: #df570a;
 }
 
 #animation .heading {
     flex-grow: 2;
     flex-basis: 1200px;
+    color: #df570a;
 }
 
 #content .heading {
     flex-grow: 2;
     flex-basis: 1200px;
+    color: #df570a;
 }
 
 .project_right {
@@ -298,7 +306,11 @@ label {
     flex-wrap: wrap;
     --txt: #6b710f;
 
-    margin: 0rem 11rem 11rem 11rem;
+    margin: 0rem 11rem 8rem 11rem;
+}
+
+#gallery h1 {
+    color: #df570a;
 }
 
 #gallery .item {
@@ -362,9 +374,9 @@ label {
 footer {
     display: flex;
     flex-wrap: wrap;
-    background-color: orange;
+    background-color: #ee8518;
     height: 100%;
-    padding: 5rem 0rem 2rem 5rem;
+    padding: 5rem 5rem 2rem 5rem;
 }
 
 footer h2 {
@@ -408,7 +420,7 @@ footer img {
     #breakpoint .txt {
         position: absolute;
         top: 114%;
-        left: 50%;
+        left: 45%;
     }
 
     #forside .splash_txt {
@@ -420,6 +432,11 @@ footer img {
         top: 38%;
         left: 51%;
     }
+
+    .heading {
+        margin-left: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 785px) {
@@ -485,7 +502,7 @@ footer img {
     }
 
     #gallery .sectionwrapper {
-        margin: 0rem 5rem 5rem 5rem;
+        margin: 0rem 3rem 5rem 2.5rem;
     }
 
 }
@@ -535,10 +552,10 @@ footer img {
 
 
     footer {
-        padding: 2.5rem 0rem 2rem 2.5rem;
+        padding: 2.5rem 0rem 2rem 0rem;
     }
 
     footer .orange {
-        margin-left: 60%;
+        margin-left: 53%;
     }
 }
