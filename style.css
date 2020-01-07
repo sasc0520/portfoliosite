@@ -152,7 +152,7 @@ label {
 
 #forside .text {
     font-size: 4rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.5rem;
     color: white;
 
@@ -198,7 +198,7 @@ label {
     background-color: white;
     flex-grow: 2;
     flex-basis: 600px;
-    padding: 0 6rem 3rem 6rem;
+    padding: 0 8rem 6rem 8rem;
     height: 100%;
     border-radius: 20px;
 
@@ -395,7 +395,7 @@ footer h2 {
 
 footer p {
     font-size: 1rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Chivo', sans-serif;
     color: white;
     margin: 4rem 0rem 0rem 0rem;
     font-weight: 100;
