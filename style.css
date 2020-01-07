@@ -174,7 +174,7 @@ label {
     color: white;
     align-items: center;
     position: absolute;
-    top: 114%;
+    top: 113%;
     left: 50%;
 
     transform: translate(-50%, -50%);
@@ -298,6 +298,12 @@ label {
 .sectionwrapper_with_color .text,
 .sectionwrapper_with_color .project_left {
     padding-bottom: 3rem;
+}
+
+.project_right video {
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
 }
 
 /**********************************************GALLERY*********************************************/
