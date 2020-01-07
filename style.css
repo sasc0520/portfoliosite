@@ -150,7 +150,7 @@ label {
     transform: translate(-50%, -50%);
 }
 
-#forside .txt {
+#forside .text {
     font-size: 4rem;
     font-family: 'Chivo', sans-serif;
     line-height: 1.5rem;
@@ -185,6 +185,7 @@ label {
 #om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 
     align-items: center;
 }
@@ -207,30 +208,45 @@ label {
 
 /***********************************PROJEKTER SEKTION*********************************************/
 
-#projekter .sectionwrapper {
+.sectionwrappers {
     display: flex;
     flex-wrap: wrap;
 }
 
-#projekter .heading {
+#web .heading {
     flex-grow: 2;
     flex-basis: 1200px;
 }
 
-#projekter .project_right {
+#ux .heading {
+    flex-grow: 2;
+    flex-basis: 1200px;
+}
+
+#animation .heading {
+    flex-grow: 2;
+    flex-basis: 1200px;
+}
+
+#content .heading {
+    flex-grow: 2;
+    flex-basis: 1200px;
+}
+
+.project_right {
     flex-grow: 1;
     flex-basis: 500px;
 
     margin-bottom: 11rem;
 }
 
-#projekter .bottom {
+.bottom {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
 }
 
-#projekter .txt {
+.text {
     flex-grow: 1;
     flex-basis: 500px;
     padding: 2.5rem;
@@ -238,20 +254,20 @@ label {
     margin-bottom: 11rem;
 }
 
-#projekter .project_left {
+.project_left {
     flex-grow: 1;
     flex-basis: 500px;
     margin-bottom: 11rem;
     margin-right: 3.5rem;
 }
 
-#projekter .bottom_last {
+.bottom_last {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
 }
 
-#projekter .bottom_with_color {
+.bottom_with_color {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -261,17 +277,17 @@ label {
     border: 2px solid white;
 }
 
-#projekter .sectionwrapper_with_color {
+.sectionwrapper_with_color {
     display: flex;
     flex-wrap: wrap;
 }
 
-#projekter .bottom_with_color .txt,
+.bottom_with_color .text,
 .bottom_with_color .project_right {
     padding-bottom: 3rem;
 }
 
-#projekter .sectionwrapper_with_color .txt,
+.sectionwrapper_with_color .text,
 .sectionwrapper_with_color .project_left {
     padding-bottom: 3rem;
 }
@@ -280,6 +296,7 @@ label {
 #gallery .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    --txt: #6b710f;
 
     margin: 0rem 11rem 11rem 11rem;
 }
@@ -287,8 +304,32 @@ label {
 #gallery .item {
     flex-grow: 1;
     flex-basis: 300px;
+    margin: 0rem 0rem 1rem 1rem;
 }
 
+#gallery img {
+    border-radius: 50px 0px 0px 0px;
+}
+
+#gallery .desc {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #6b710f;
+    border-radius: 0px 0px 50px 0px;
+}
+
+#gallery .desc .txt {
+    font-size: 1rem;
+    font-family: 'Chivo', sans-serif;
+    line-height: 1.5rem;
+    color: var(--txt);
+    text-decoration: none;
+}
+
+#gallery .desc:hover {
+    background-color: #6b710f;
+    --txt: white;
+}
 
 
 /*******************************************BUTTON**************************************************/
@@ -308,7 +349,7 @@ label {
     margin-top: 2rem;
 
     border: 2px solid #6b710f;
-    border-radius: 16px;
+    border-radius: 50px 2px;
 }
 
 .button:hover {
@@ -320,25 +361,45 @@ label {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     background-color: orange;
     height: 100%;
+    padding: 5rem 0rem 2rem 5rem;
 }
 
-footer p {
+footer h2 {
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
     color: white;
-    margin: 4rem;
+    margin: 4rem 4rem 0rem 4rem;
+    font-weight: 100;
 }
 
-footer .txt {
+footer p {
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin: 4rem 0rem 0rem 0rem;
+    font-weight: 100;
+}
+
+footer .txt_f {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 800px;
+}
+
+footer .copy {
+    flex-grow: 2;
+    flex-basis: 1200px;
+    text-align: center;
 }
 
 footer .orange {
-    flex-grow: 1;
-    flex-basis: 500px;
+    margin-left: 78%;
+}
+
+footer img {
+    width: 100%;
 }
 
 /************************************MEDIA QUERIES************************************/
@@ -346,13 +407,23 @@ footer .orange {
 @media only screen and (max-width: 784px) {
     #breakpoint .txt {
         position: absolute;
-        top: 117%;
+        top: 114%;
         left: 50%;
+    }
+
+    #forside .splash_txt {
+        top: 38%;
+        left: 51%;
+    }
+
+    #forside .text {
+        top: 38%;
+        left: 51%;
     }
 }
 
 @media only screen and (max-width: 785px) {
-    #projekter .txt {
+    .txt {
         margin-right: 1.5rem;
         margin-left: 1.5rem;
     }
@@ -393,15 +464,15 @@ footer .orange {
 
 @media only screen and (max-width: 1169px) {
 
-    #projekter .project_left {
+    .project_left {
         flex-basis: 400px;
     }
 
-    #projekter .txt {
+    .txt {
         flex-basis: 200px;
     }
 
-    #projekter .project_right {
+    .project_right {
         flex-basis: 400px;
     }
 
@@ -421,22 +492,23 @@ footer .orange {
 
 @media only screen and (max-width: 1169px) {
 
-    #projekter .txt {
-        margin-bottom: 1rem;
+    .text {
+        margin-bottom: 6rem;
     }
 
-    #projekter .bottom_with_color .txt,
+    .bottom_with_color .txt,
     .bottom_with_color .project_right {
         padding-bottom: 2rem;
     }
 
-    #projekter .project_left {
+    .project_left {
         margin-right: 2rem;
         margin-left: 2rem;
+        margin-bottom: 4rem;
     }
 
-    #projekter .project_right {
-        margin-bottom: 5rem;
+    .project_right {
+        margin-bottom: 4rem;
     }
 }
 
@@ -456,5 +528,17 @@ footer .orange {
 
     #om .box {
         flex-basis: 250px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+    footer {
+        padding: 2.5rem 0rem 2rem 2.5rem;
+    }
+
+    footer .orange {
+        margin-left: 60%;
     }
 }
