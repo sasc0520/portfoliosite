@@ -41,7 +41,7 @@ h2 {
 
 p {
     font-size: 1rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5rem;
     color: #2a2928;
 }
@@ -63,7 +63,8 @@ p {
 }
 
 .color {
-    background-color: bisque;
+    background-image: url(images/orangetexture.svg);
+    background-size: cover;
 }
 
 .colora {
@@ -87,6 +88,7 @@ header {
 
     --text: #ffffff;
     --hover: #f9d68f;
+    --label: #ffffff;
 }
 
 header nav {
@@ -97,7 +99,7 @@ header nav {
 
 header nav a {
     font-size: 1rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: var(--text);
     padding: 0.5rem;
@@ -114,7 +116,7 @@ header nav a:hover {
 label {
     margin: 1rem 1.5rem 0 0;
     font-size: 26px;
-    color: black;
+    color: var(--label);
     display: none;
 }
 
@@ -124,6 +126,7 @@ label {
 
 .nav_scrolled {
     --text: #ee8518;
+    --label: #ee8518;
     background-color: white;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
@@ -146,7 +149,7 @@ label {
 
     position: absolute;
     top: 38%;
-    left: 82%;
+    left: 78%;
     transform: translate(-50%, -50%);
 }
 
@@ -158,7 +161,7 @@ label {
 
     position: absolute;
     top: 38%;
-    left: 82%;
+    left: 78%;
     transform: translate(-50%, -50%);
 }
 
@@ -338,7 +341,7 @@ label {
 
 #gallery .desc .txt {
     font-size: 1rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5rem;
     color: var(--txt);
     text-decoration: none;
@@ -356,7 +359,7 @@ label {
     background-color: transparent;
     color: #6b710f;
     padding: 15px 32px;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: lowercase;
@@ -395,7 +398,7 @@ footer h2 {
 
 footer p {
     font-size: 1rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     margin: 4rem 0rem 0rem 0rem;
     font-weight: 100;
@@ -505,6 +508,7 @@ footer img {
 
     #gallery .item {
         flex-basis: 250px;
+        margin: 0rem 0rem 1rem 1rem;
     }
 
     #gallery .sectionwrapper {
@@ -525,8 +529,8 @@ footer img {
     }
 
     .project_left {
-        margin-right: 2rem;
-        margin-left: 2rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
         margin-bottom: 4rem;
     }
 
@@ -535,13 +539,6 @@ footer img {
     }
 }
 
-@media only screen and (max-width: 1172px) {
-
-    #om .box {
-        padding: 0 2rem 1.5rem 2rem;
-    }
-
-}
 
 @media only screen and (max-width: 1276px) {
 
@@ -551,6 +548,7 @@ footer img {
 
     #om .box {
         flex-basis: 250px;
+        padding: 0 2rem 5rem 2rem;
     }
 }
 
